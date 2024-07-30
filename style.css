@@ -5,7 +5,8 @@ html, body{
 
 h1{
     text-transform: uppercase;
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid #ffca37;
+    text-align: center;
 }
 
 .img{
@@ -44,7 +45,7 @@ h1{
     border: 3px solid black;
 }
 .country a{
-    background-color: rgb(255, 242, 196);
+    background-color: rgb(255, 201, 6);
     padding: 5px;
 }
 a{
@@ -55,7 +56,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(255, 225, 103);
+    background-color: rgb(240, 227, 172);
 }
  .q{
     background-color: rgb(255, 225, 103);
@@ -107,7 +108,7 @@ header{
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        background: rgb(255, 236, 236);
+        background: rgb(255, 231, 189);
 
         &::before {
           content: attr(data-next-text);
@@ -119,7 +120,7 @@ header{
           flex-direction: column;
           align-items: center;
           justify-content: flex-start;
-          background: rgb(255, 236, 224);
+          background: rgb(255, 251, 171);
         }
 
         &::after {
@@ -330,3 +331,64 @@ header{
     opacity: 1;
   }
 }
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Стили для карточек */
+.cards {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(5, 2fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card b {
+  display: block;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card img:hover {
+  opacity: 0.8;
+}
+
+.main-block{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 2fr);
+    text-align: center;
+    gap: 20px;
+  }
+  .main-block h3{
+    font-size: 30px;
+    border-bottom: #8e7120 solid 3px;
+  }
+  .main-block p{
+    font-size: 25px;
+    border-left: #8e7120 solid 3px;
+    padding-left: 10px;
+  }
